@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=IBM+Plex+Sans+JP&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c&family=Noto+Sans+JP:wght@100..900&family=Tapestry&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- off canvas navbar -->
+    <nav class="navbar fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/logo.png" alt="portfolio-website" />
+        </a>
+        <div class="d-flex flex-row">
+          <!-- nav -->
+          <div>
+            <ul class="navbar-nav d-none d-lg-flex flex-row gap-4 me-5">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#about">about</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Work
+                </a>
+
+                <div class="position-relative">
+                  <ul
+                    class="dropdown-menu position-absolute outside-nav-dropdown"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="main-work.html">Main</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="other-1.html">Other 1</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="other-2.html">Other 2</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="other-3.html">Other 3</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- hamburger -->
+          <button
+            class="navbar-toggler d-flex d-lg-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div
+          class="offcanvas offcanvas-end fs-4 lh-1 text-body-secondary"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title fs-3 mt-2" id="offcanvasNavbarLabel">
+              Menu
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item mb-2">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link" href="index.html#about">About</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link" href="main-work.html">Main Work</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link" href="other-1.html">Other 1</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link" href="other-2.html">Other 2</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link" href="other-2.html">Other 3</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="d-flex flex-grow-1 pt-5">
+      <section
+        id="home"
+        class="pt-2 flex-grow-1 d-flex justify-content-center align-items-start"
+      >
+        <div
+          class="col-12 col-md-8 col-xxl-6 d-flex flex-column justify-content-start px-4"
+        >
+          <div>
+            <div class="title title-en fs-3 my-4">Progress</div>
+          </div>
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide border mx-auto w-100 mb-4"
+            data-bs-ride="carousel"
+            data-bs-interval="5000"
+          >
+            <!-- bottom indicator -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="5"
+                aria-label="Slide 6"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="6"
+                aria-label="Slide 7"
+              ></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="assets/progress-light.png"
+                  class="d-block w-100"
+                  alt="website-image"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/progress-dark.png"
+                  class="d-block w-100"
+                  alt="website-image"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/pomodoro-start.png"
+                  class="d-block w-100"
+                  alt="website-image"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/session-end.png"
+                  class="d-block w-100"
+                  alt="website-image"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/task.png"
+                  class="d-block w-100"
+                  alt="website-image"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/report.png"
+                  class="d-block w-100"
+                  alt="website-image"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/stats.png"
+                  class="d-block w-100"
+                  alt="website-image"
+                />
+              </div>
+              <!-- <div class="carousel-item">
+                            <img src="test-image.png" class="d-block w-100" alt="Nature Desert">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Fifth slide label</h5>
+                                <p>Some representative placeholder content for the fifth slide.</p>
+                            </div>
+                        </div> -->
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- access button -->
+          <div class="d-flex flex-column mb-4 w-100">
+            <a
+              href="http://ec2-35-78-204-229.ap-northeast-1.compute.amazonaws.com"
+              class="btn-swipe w-50 mx-auto mb-3"
+              >移動<i class="bx bx-link-external"></i
+            ></a>
+            <button
+              id="login-info"
+              class="btn-gray w-50 py-2"
+              onclick="openModal()"
+            >
+              ログイン情報
+            </button>
+          </div>
+          <!-- login modal -->
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <div class="d-flex justify-content-between mb-3">
+                <div class="fs-3">ログイン情報</div>
+                <div class="close pt-1">&times;</div>
+              </div>
+              <div>メールアドレス: guest@example.com</div>
+              <div>パスワード: guest999</div>
+            </div>
+          </div>
+          <div class="mb-5">
+            <div class="mb-3">
+              <div class="title title-jp">名前</div>
+              <div class="text">Progress</div>
+            </div>
+            <div class="mb-3">
+              <div class="title title-jp">説明</div>
+              <div class="text">
+                ポモドーロタイマー、フロータイマー、タスク管理、学習記録など、学習や作業の効率を上げるためのWebアプリケーション
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="title title-jp">機能</div>
+              <ul class="text">
+                <li>ログイン機能</li>
+                <li>
+                  ポモドーロタイマー<br />
+                  （タイトル、サイクル数、集中と休憩時間設定可能）
+                </li>
+                <li>フロータイマー(０から∞)</li>
+                <li>タスク作成、編集、削除、開始</li>
+                <li>タグ付けとフィルター</li>
+                <li>勉強時間の統計と分析グラフ（日次、週次、月次）</li>
+                <li>完了したタスクの一覧(7/14/30日で表示)</li>
+              </ul>
+            </div>
+
+            <div class="mb-3">
+              <div class="title title-jp">ポイント</div>
+              <ul class="text">
+                <li>ライトモード・ダークモード対応</li>
+                <li>日本語・英語対応</li>
+                <li>モバイル・タブレット・デスクトップサイズ対応</li>
+              </ul>
+            </div>
+            <div class="mb-5">
+              <div class="title title-jp">技術・ソフト</div>
+              <div class="text">
+                PHP(Laravel) / Javascript / HTML / CSS / Tailwind / Figma / AWS / MySQL
+              </div>
+            </div>
+
+            <div class="memo">
+              <div class="title-memo">Memo</div>
+              <div class="text">
+                仕事で学んだPHP(Laravel)の知識を活かして、このWebアプリケーションを開発しました。
+                普段ポモドーロテクニックやタスク管理ツールを利用している経験から、使いやすさとシンプルさを追求し、カスタマイズできる勉強タイマー機能を実装しました。
+                学習の計画と進捗を管理できるよう、タスク作成機能も備えています。
+                また、ダークモードと多言語対応を追加しました。
+                現時点では、第一段階成果をAWSでリリースしました。
+                今後、UIの改善や新たな機能の追加を予定しています。
+              </div>
+            </div>
+          </div>
+          <button class="btn-gray mb-5" onclick="history.back();" class="">
+            戻る
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="text-center">© Lihmin All rights reserved.</footer>
+    <script src="js/title.js"></script>
+    <script src="js/modal.js"></script>
+  </body>
+</html>
