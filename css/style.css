@@ -16,6 +16,7 @@
 }
 
 body {
+    width: 100vw;
     min-height: 100svh;
     display: flex;
     flex-direction: column;
@@ -76,8 +77,11 @@ body {
     justify-content: start; */
     position: relative;
     height: 300px;
+}
+
+.bg-banner{
     background-color: var(--gray-banner);
-    overflow: hidden;
+    width: 100vw;
 }
 
 .banner img{
@@ -96,7 +100,7 @@ body {
     font-size: 132px;
     color: var(--primary);
     opacity: 90%;
-    line-height: -10px;
+    line-height: -5px;
 }
 
 .name-top{
@@ -104,7 +108,6 @@ body {
     top:0;
     left:50%;
     transform: translate(-90%, 5px);
-    
 }
 
 .name-bottom{
@@ -112,6 +115,23 @@ body {
     bottom:0;
     left:50%;
     transform: translate(-35%, 56px);
+}
+
+@media screen and (max-width: 768px){
+    .name{
+        font-size: 110px;
+    }
+
+    .name-bottom{
+        transform: translate(-45%, 40px);
+    }
+    
+    .name-top{
+        transform: translate(-95%, 30px);
+    }
+    .outer-circle {
+        margin-left: 50px;
+    }
 }
 
 .outer-circle {
