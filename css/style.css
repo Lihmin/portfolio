@@ -134,12 +134,35 @@ body {
     }
 }
 
+@media screen and (max-width: 400px){
+    .name{
+        font-size: 96px;
+    }
+
+    .name-bottom{
+        transform: translate(-45%, 40px);
+    }
+    
+    .name-top{
+        transform: translate(-95%, 30px);
+    }
+    .outer-circle {
+        margin-left: 28px;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .outer-circle {
+        margin-left: 80px;
+    }
+}
+
 .outer-circle {
     z-index: 20;
     position: absolute;
     top: 18%;
     left: 50%;
-    margin-left: 80px;
+    /* margin-left: 80px; */
     width: 180px;
     height: 180px;
     border: 6px dotted var(--primary-dark);
