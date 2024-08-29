@@ -31,294 +31,318 @@
   </head>
 
   <body>
-    <!-- off canvas navbar -->
-    <nav class="navbar fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/logo.png" alt="portfolio-website" />
-        </a>
-        <div class="d-flex flex-row">
-          <!-- nav -->
-          <div>
-            <ul class="navbar-nav d-none d-lg-flex flex-row gap-4 me-5">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
-                  >home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">about</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Work
-                </a>
-
-                <div class="position-relative">
-                  <ul
-                    class="dropdown-menu position-absolute outside-nav-dropdown"
-                  >
-                    <li>
-                      <a class="dropdown-item" href="main-work.html">Main</a>
-                    </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="other-1.html">Other 1</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="other-2.html">Other 2</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="other-3.html">Other 3</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <!-- hamburger -->
-          <button
-            class="navbar-toggler d-flex d-lg-none"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-        <div
-          class="offcanvas offcanvas-end fs-4 lh-1 text-body-secondary"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title fs-3 mt-2" id="offcanvasNavbarLabel">
-              Menu
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item mb-2">
-                <a class="nav-link" aria-current="page" href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item mb-2">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a class="nav-link" href="main-work.html">Main Work</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a class="nav-link" href="other-1.html">Other 1</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a class="nav-link" href="other-2.html">Other 2</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a class="nav-link" href="other-2.html">Other 3</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <div
-      class="bg-banner">
-      <div class="d-flex align-items-center text-start position-relative pt-5 banner"
-      >">
-      <div class="name-top d-flex justify-center align-items-center">
-        <img src="assets/banner-arrow.png" />
-        <div class="name">Pang</div>
-      </div>
-      <div class="scroll">
-        <div class="scroll-text">
-          <p>hello, I'm a web engineer, web designer.</p>
-          <p>hello, I'm a web engineer, web designer.</p>
-          <p>hello, I'm a web engineer, web designer.</p>
-          <p>hello, I'm a web engineer, web designer.</p>
-          <p>hello, I'm a web engineer, web designer.</p>
-          <p>hello, I'm a web engineer, web designer.</p>
-          <p>hello, I'm a web engineer, web designer.</p>
-        </div>
-      </div>
-      <div class="name-bottom d-flex justify-center align-items-center">
-        <div class="name">LihMin</div>
-        <img class="flip" src="assets/banner-arrow.png" />
-      </div>
-      
-
-      <!-- circle -->
-      <div class="outer-circle">
-        <div class="inner-circle"></div>
+    <div id="preloader" class="loading">
+      <div class="icons">
+        <i class="bx bx-chevron-left"></i>
+        <i class="bx bx-chevron-right"></i>
       </div>
     </div>
-  </div>
-    <!-- main -->
-    <main class="d-flex flex-grow-1 justify-content-center">
-      <section
-        id="home"
-        class="row container pt-2 flex-grow-1"
-      >
-        <div
-          class="col-12 col-md-10 col-xxl-8 d-flex flex-column justify-content-start px-4"
-        >
-          <div>
-            <div class="title title-en my-4">Main Work</div>
-          </div>
-          <div class="border border-gray p-3">
-            <div
-              class="d-flex justify-center align-items-center flex-column flex-md-row w-100"
-            >
-              <div class="border-work mb-4 me-0 me-md-4 work-image">
-                <img
-                  class="w-100"
-                  src="assets/main-work.png"
-                  alt="website-image"
-                />
-              </div>
-              <!-- button -->
-              <div
-                class="d-flex justify-center flex-column work-button px-5 px-md-0"
-              >
-                <!-- use fix width? -->
-                <a href="main-work.html" class="btn-swipe w-100 mb-3">詳細</a>
-
-                <div class="d-flex justify-center">
+    <div id="content">
+      <!-- off canvas navbar -->
+      <nav class="navbar fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/logo.png" alt="portfolio-website" />
+          </a>
+          <div class="d-flex flex-row">
+            <!-- nav -->
+            <div>
+              <ul class="navbar-nav d-none d-lg-flex flex-row gap-4 me-5">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">about</a>
+                </li>
+                <li class="nav-item dropdown">
                   <a
-                    href="http://ec2-35-78-204-229.ap-northeast-1.compute.amazonaws.com"
-                    class="btn-swipe w-50 me-3"
-                    >移動<i class="bx bx-link-external bs-sm"></i
-                  ></a>
-                  <button id="login-info" class="btn-gray w-50" onclick="openModal()">
-                    ログイン情報
-                  </button>
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Work
+                  </a>
+
+                  <div class="position-relative">
+                    <ul
+                      class="dropdown-menu position-absolute outside-nav-dropdown"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="main-work.html">Main</a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="other-1.html">Other 1</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="other-2.html">Other 2</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="other-3.html">Other 3</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- hamburger -->
+            <button
+              class="navbar-toggler d-flex d-lg-none"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div
+            class="offcanvas offcanvas-end fs-4 lh-1 text-body-secondary"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title fs-3 mt-2" id="offcanvasNavbarLabel">
+                Menu
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item mb-2">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a class="nav-link" href="main-work.html">Main Work</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a class="nav-link" href="other-1.html">Other 1</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a class="nav-link" href="other-2.html">Other 2</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a class="nav-link" href="other-2.html">Other 3</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="bg-banner">
+        <div
+          class="d-flex align-items-center text-start position-relative pt-5 banner"
+        >
+          ">
+          <div class="name-top d-flex justify-center align-items-center">
+            <img src="assets/banner-arrow.png" />
+            <div class="name">Pang</div>
+          </div>
+          <div class="scroll">
+            <div class="scroll-text">
+              <p>hello, I'm a web engineer, web designer.</p>
+              <p>hello, I'm a web engineer, web designer.</p>
+              <p>hello, I'm a web engineer, web designer.</p>
+              <p>hello, I'm a web engineer, web designer.</p>
+              <p>hello, I'm a web engineer, web designer.</p>
+              <p>hello, I'm a web engineer, web designer.</p>
+              <p>hello, I'm a web engineer, web designer.</p>
+            </div>
+          </div>
+          <div class="name-bottom d-flex justify-center align-items-center">
+            <div class="name">LihMin</div>
+            <img class="flip" src="assets/banner-arrow.png" />
+          </div>
+
+          <!-- circle -->
+          <div class="outer-circle">
+            <div class="inner-circle"></div>
+          </div>
+        </div>
+      </div>
+      <!-- main -->
+      <main class="d-flex flex-grow-1 justify-content-center">
+        <section
+          id="home"
+          class="container pt-2 flex-grow-1 d-flex justify-content-center px-0 px-lg-5"
+        >
+          <div class="d-flex flex-column justify-content-start px-4">
+            <div>
+              <div class="title title-en my-4">Main Work</div>
+            </div>
+            <div class="border border-gray p-3">
+              <div
+                class="d-flex justify-center align-items-center flex-column flex-md-row w-100"
+              >
+                <div class="border-work mb-4 me-0 me-md-4 work-image">
+                  <img
+                    class="w-100"
+                    src="assets/main-work.png"
+                    alt="website-image"
+                  />
+                </div>
+                <!-- button -->
+                <div
+                  class="d-flex justify-center flex-column work-button px-5 px-md-0"
+                >
+                  <!-- use fix width? -->
+                  <a href="main-work.html" class="btn-swipe w-100 mb-2">詳細</a>
+
+                  <div class="d-flex justify-center flex-column">
+                    <a
+                      href="http://ec2-35-78-204-229.ap-northeast-1.compute.amazonaws.com"
+                      class="btn-swipe w-100 me-3 mb-2"
+                      >移動<i class="bx bx-link-external bs-sm"></i
+                    ></a>
+                    <button
+                      id="login-info"
+                      class="btn-gray w-100"
+                      onclick="openModal()"
+                    >
+                      ログイン<wbr />情報
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- login modal -->
-          <div id="modal" class="modal">
-            <div class="modal-content">
-              <div class="d-flex justify-content-between mb-3">
-                <div class="fs-3">ログイン情報</div>
-                <div class="close pt-1">&times;</div>
+            <!-- login modal -->
+            <div id="modal" class="modal-window">
+              <div class="modal-inner">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <div class="fs-3 lh-1">ログイン情報</div>
+                  <div>
+                    <i class="bx bx-x bx-md close text-body-secondary"></i>
+                  </div>
+                </div>
+                <div class="text-break">メールアドレス: guest@example.com</div>
+                <div>パスワード: guest999</div>
+              </div>
+            </div>
+            <!-- others -->
+            <div class="my-5">
+              <div class="title title-en my-4">Other Works</div>
+              <div class="row">
+                <!-- others 1 -->
+                <div
+                  class="col-12 col-sm-12 col-md-6 col-lg-4 pe-0 mb-2 mb-lg-0"
+                >
+                  <div class="border border-gray p-4">
+                    <div class="mb-4 title-jp fs-3">
+                      十色珈琲
+                      <img
+                        class="w-100 mt-2"
+                        src="assets/other-1.png"
+                        alt="website-image-1"
+                      />
+                    </div>
+                    <!-- button -->
+                    <div class="px-3 px-lg-5">
+                      <a href="other-1.html" class="btn-swipe mb-2 d-block"
+                        >詳細</a
+                      >
+                      <a
+                        href="https://lihmin.github.io/toiro"
+                        class="btn-swipe d-block mb-3"
+                        >移動<i class="bx bx-link-external bs-sm"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- others 2 -->
+                <div
+                  class="col-12 col-sm-12 col-md-6 col-lg-4 pe-0 mb-2 mb-lg-0"
+                >
+                  <div class="border border-gray p-4">
+                    <div class="mb-4 title-jp fs-3">
+                      <div class="text-truncate">むすびアカデミー</div>
+                      <img
+                        class="w-100 mt-2"
+                        src="assets/other-2.png"
+                        alt="website-image-1"
+                      />
+                    </div>
+                    <!-- button -->
+                    <div class="px-3 px-lg-5">
+                      <a href="other-2.html" class="btn-swipe mb-2 d-block"
+                        >詳細</a
+                      >
+                      <a
+                        href=" https://lihmin.github.io/musubiacademy"
+                        class="btn-swipe d-block mb-3"
+                        >移動<i class="bx bx-link-external bs-sm"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- others 3 -->
+                <div
+                  class="col-12 col-sm-12 col-md-6 col-lg-4 pe-0 mb-2 mb-lg-0"
+                >
+                  <div class="border border-gray p-4">
+                    <div class="mb-4 title-jp fs-3">
+                      <div class="text-truncate">操作パネル</div>
+                      <img
+                        class="w-100 mt-2"
+                        src="assets/other-3.png"
+                        alt="website-image-1"
+                      />
+                    </div>
+                    <!-- button -->
+                    <div class="px-3 px-lg-5">
+                      <a
+                        href="other-3.html"
+                        class="btn-swipe margin-panel d-block"
+                        >詳細</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <section id="about" class="container p-4 mb-5 text-break">
+              <div class="title-en fs-2">About</div>
+              <div class="fs-5 mb-1 lh-1">Pang Lih Min / <small>彭律敏</small></div>
+              <div class="mb-3">出身マレーシア<br>日本在住</div>
+              <div class="mb-2">
+                スキル:
+                PHP(Laravel)/JavaScript/Jquery/Linux/MySql/Git/HTML/CSS/SCSS/Tailwind/Bootstrap
               </div>
               <div>
-                メールアドレス: guest@example.com
+                ツール: VScode/Eclipse/A5:SQL/Figma/Photoshop/After Effects
               </div>
-              <div> パスワード: guest999</div>
-            </div>
+              <div class="mt-2">Contact</div>
+              <div>
+                <i class="bx bx-envelope me-1"></i><u>lmin9095@gmail.com</u>
+              </div>
+            </section>
           </div>
-          <!-- others -->
-          <div class="my-5">
-            <div class="title title-en my-4">Other Works</div>
-            <div class="row">
-              <!-- others 1 -->
-              <div class="col-12 col-sm-12 col-md-6 col-lg-4 pe-0 pe-md-2">
-                <div class="border border-gray p-4">
-                  <div class="mb-4 title-jp fs-3">
-                    十色珈琲
-                    <img
-                      class="w-100 mt-2"
-                      src="assets/other-1.png"
-                      alt="website-image-1"
-                    />
-                  </div>
-                  <!-- button -->
-                  <div class="px-3 px-lg-5">
-                    <a href="other-1.html" class="btn-swipe mb-2 d-block"
-                      >詳細</a
-                    >
-                    <a
-                      href="https://lihmin.github.io/toiro"
-                      class="btn-swipe d-block mb-3"
-                      >移動<i class="bx bx-link-external bs-sm"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- others 2 -->
-              <div class="col-12 col-sm-12 col-md-6 col-lg-4 pe-0 pe-lg-2">
-                <div class="border border-gray p-4">
-                  <div class="mb-4 title-jp fs-3">
-                    むすびアカデミー
-                    <img
-                      class="w-100 mt-2"
-                      src="assets/other-2.png"
-                      alt="website-image-1"
-                    />
-                  </div>
-                  <!-- button -->
-                  <div class="px-3 px-lg-5">
-                    <a href="other-2.html" class="btn-swipe mb-2 d-block"
-                      >詳細</a
-                    >
-                    <a
-                      href=" https://lihmin.github.io/musubiacademy"
-                      class="btn-swipe d-block mb-3"
-                      >移動<i class="bx bx-link-external bs-sm"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- others 3 -->
-              <div class="col-12 col-sm-12 col-md-6 col-lg-4 pe-0 pe-md-2">
-                <div class="border border-gray p-4">
-                  <div class="mb-4 title-jp fs-3">
-                    コントロールパネル
-                    <img
-                      class="w-100 mt-2"
-                      src="assets/other-3.png"
-                      alt="website-image-1"
-                    />
-                  </div>
-                  <!-- button -->
-                  <div class="px-3 px-lg-5">
-                    <a
-                      href="other-3.html"
-                      class="btn-swipe margin-panel d-block"
-                      >詳細</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr />
-          <section id="about" class="container p-4 mb-5">
-            <div class="title-en fs-2">About</div>
-            <div class="fs-5 mb-1 lh-1">Pang Lih Min/彭律敏</div>
-            <div class="mb-3">出身マレーシア、日本在住</div>
-            <div>スキル: PHP(Laravel)/JavaScript/Jquery/Linux/MySql/Git/HTML/CSS/SCSS/Tailwind/Bootstrap
-              <div>ツール: VScode/Eclipse/A5:SQL/Figma/Photoshop/After Effects</div>
-            <div class="mt-2">Contact</div>
-            <div>
-              <i class="bx bx-envelope me-1"></i><u>lmin9095@gmail.com</u>
-            </div>
-          </section>
-        </div>
-      </section>
-    </main>
-    <footer class="text-center">© Lihmin All rights reserved.</footer>
+        </section>
+      </main>
+      <footer class="text-center">© Lihmin All rights reserved.</footer>
+    </div>
+    <script src="js/preloader.js"></script>
     <script src="js/title.js"></script>
     <script src="js/modal.js"></script>
   </body>

@@ -82,6 +82,7 @@ body {
 .bg-banner{
     background-color: var(--gray-banner);
     width: 100vw;
+    overflow: hidden;
 }
 
 .banner img{
@@ -286,6 +287,7 @@ body {
 .btn-gray{
     color: var(--gray-text);
     text-decoration: none;
+    font-size: 1.25rem !important;
     width: 200px;
     margin: 0 auto;
     letter-spacing: 1px;
@@ -386,44 +388,34 @@ body {
     margin-bottom: 66px;
 }
 /* modal window */
-.modal {
+.modal-window {
     display: none;
     justify-content: center;
     align-items: center;
     position: fixed;
-    z-index: 3;
+    z-index: 999;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
+    padding: 0 1.5rem;
     overflow: visible;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal-content {
+.modal-inner {
     background-color: white;
-    margin: 40% auto; 
-    padding: 30px;
+    padding: 24px 24px 36px;
     border: 1px solid #888;
     width: 80%; 
     max-width: 600px;
     border-radius: 5px;
+    margin-bottom: 50px;
 }
 
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+    z-index: 9999;
 }
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 
 
 /* carousel */
@@ -486,3 +478,66 @@ body {
     height: 80px;
     background-color: var(--gray);
  }
+/* 
+ preloader */
+ .loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }  
+  
+  .icons {
+    display: flex;
+    position: relative;
+  }
+  
+  .loading i {
+    font-size: 3em;
+    color: transparent;
+    background: linear-gradient(45deg,var(--primary-dark),var(--primary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: up 1s ease infinite;
+  }
+  
+  @keyframes up {
+  
+    0%,
+    100% {
+      transform: scale(1);
+      opacity: 0.6;
+    }
+  
+    50% {
+      transform: scale(1.5);
+      opacity: 1;
+    }
+  }
+  
+  .loading i:nth-child(2){
+    margin-left: -14px;
+    animation: up2 1s ease infinite;
+  }
+  
+  @keyframes up2 {
+  
+    0%,
+    100% {
+      transform: scale(1.5);
+      opacity: 1;
+  
+    }
+  
+    50% {
+      transform: scale(1);
+      opacity: 0.6;
+  
+    }
+  }
